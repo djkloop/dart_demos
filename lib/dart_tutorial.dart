@@ -4,7 +4,8 @@ import './src/list.dart';
 import './src/map.dart';
 import './src/func.dart';
 
-main() {
+
+main(List<String> args) {
     // Print Number is 42
   print(calculate());
   // Return bool
@@ -69,4 +70,20 @@ main() {
   print(say('China', '学习Dart'));
   print(say('China', '学习Dart', 'Mac osx'));
   defaultFunc(bold: true, isHidden: true);
+  print(sayDefaultValue('djkloop', 'study Dart', 'MacOsx', 'good'));
+  print(sayUnorderedDefaultValue('djkloop', 'study Dart', mood: 'best', device: 'Windows'));
+  print(sayDefaultValue('djkloop', 'study Dart'));
+  doSomething('Test', list: [2, 3, 5]);
+
+  var funcList = ['apple', 'bananas', 'oranges'];
+  // funcList.forEach((item) {
+  //   print('${funcList.indexOf(item)}: $item');
+  // });
+  funcList.forEach((item) => print('${funcList.indexOf(item)}: $item'));
+  funcs();
+
+  var add3 = makeAdder(3);
+  var add4 = makeAdder(4);
+  print(add3(11));
+  print(add4(222));
 }
