@@ -23,6 +23,8 @@ const int hex = 0xDEADBEEF;
 String gg = '1';
 var one = int.parse(gg);
 
+String fixedString = 3.1415926.toStringAsFixed(2);
+
 final double c = 1.9;
 final double d = 1e10;
 
@@ -35,4 +37,19 @@ var s1 = 'String - 1 \n'
           "Hello Dart String ";
 
 var s2 = r'The \n';
+
+var ss = 'string interpolation';
+var sss = 'This... ${ss.toUpperCase()}';
+
+var qsInter = 'string';
+var qs = 'string is string';
+var qs2 = 'string is ${qsInter}';
+var qs3 = '''Hello World''';
+var qs4 = """Hello Dart String!""";
+var qs5 = '$y';
+
+var fullName = '';
+double f = 0 / 0;
+
+
 
