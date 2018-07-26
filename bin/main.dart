@@ -1,26 +1,32 @@
-import 'package:dart_tutorial/dart_tutorial.dart' as dart_tutorial;
-import 'dart:async';
+import './comments.dart';
+import './const.dart';
+// 这是单行注释
+//// 这是啥注释啊...
 
-main(List<String> arguments) async {
-  print('Hello world: ${dart_tutorial.calculate()}!');
-  var somthing = "hello world";
-  somthing = "card yellow";
-  print(somthing);
+// 入口函数
+main() {
+  // Print Number is 42
+  print(calculate());
+  // Return bool
+  print(convertToBool('hello'));
+  // Return null
+  print(numberCount);
+  // final
+  print(x);
+  // const
+  print(y);
+  // string1
+  print(s1);
+  // string2
+  print(s2);
+  // print int 1.9
+  print(c);
+  // print hex 66
+  print(hex);
+  // print 10000000000.0
+  print(d);
 
-  // 无法改变
-  const number = '';
+  print(one is int);
 
-  // final 必须初始化值在编译时无法知道值
-  final numbers = 22;
 
-  String str = await loadingString("Hello From Dart Async");
-
-  print(str);
 }
-
-Future<String> loadingString(String str) async {
-  await Future.delayed(Duration(seconds: 1));
-  return "String: $str";
-}
-
-
