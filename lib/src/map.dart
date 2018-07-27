@@ -1,4 +1,5 @@
-var searchTerms = new Map();
+var searchTerms = {};
+
 
 var hasMoreMap = {
   'a': ['Yeah', 'Hello', 'World'],

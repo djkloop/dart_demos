@@ -79,3 +79,7 @@ Function makeAdder(num addBy) {
   return (num i) => addBy + i;
 }
 
+typedef int Add(int a, int b);
+int Subtract(int a, int b) => a - b;
+
+foo() {}

@@ -3,15 +3,20 @@ import './src/const.dart';
 import './src/list.dart';
 import './src/map.dart';
 import './src/func.dart';
-
+import './src/operators.dart';
 
 main(List<String> args) {
-    // Print Number is 42
+  // Print Number is 42
   print(calculate());
   // Return bool
   print(convertToBool('hello'));
   // Return null
   print(numberCount);
+  // 42.0
+  print(dddd);
+  // false
+  var ax = DateTime.parse("2006-01-02 15:04:05");
+  print('$now but now is ${ax}');
   // final
   print(x);
   // const
@@ -44,7 +49,7 @@ main(List<String> args) {
   print(f);
   // [1, '1']
   print(fruits = [1, '1']);
-   // [1, 2, 3]
+  // [1, 2, 3]
   print(fruits_int = [1, 2, 3]);
   // [apple, oranges]
   print(fruitsLists);
@@ -71,9 +76,12 @@ main(List<String> args) {
   print(say('China', '学习Dart', 'Mac osx'));
   defaultFunc(bold: true, isHidden: true);
   print(sayDefaultValue('djkloop', 'study Dart', 'MacOsx', 'good'));
-  print(sayUnorderedDefaultValue('djkloop', 'study Dart', mood: 'best', device: 'Windows'));
+  print(sayUnorderedDefaultValue('djkloop', 'study Dart',
+      mood: 'best', device: 'Windows'));
   print(sayDefaultValue('djkloop', 'study Dart'));
   doSomething('Test', list: [2, 3, 5]);
+  // default return null -> true
+  print(foo() == null);
 
   var funcList = ['apple', 'bananas', 'oranges'];
   // funcList.forEach((item) {
@@ -86,4 +94,11 @@ main(List<String> args) {
   var add4 = makeAdder(4);
   print(add3(11));
   print(add4(222));
+  searchTerms[4] = 16;
+  print(searchTerms);
+  print(11 ~/ 6);
+  // emoji
+  print('\u{1f600}');
+  // 取整 -> 2
+  print(opreat_y ~/ opreat_x);
 }

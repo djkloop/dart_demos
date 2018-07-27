@@ -27,10 +27,20 @@ String fixedString = 3.1415926.toStringAsFixed(2);
 
 final double c = 1.9;
 final double d = 1e10;
+final double dddd = 6 * 7.0;
+final now = new DateTime.now().toIso8601String();
+final list = [1, 2, 3];
 
 final x = "字符串666";
 final String xx = "字符串XXX";
 const int y = 666;
+const listConst = const [1, 2, 3];
+
+class constClass {
+  static const o = '_Op';
+  final oo = '__Op';
+
+}
 
 var s1 = 'String - 1 \n'
         'Yeah\n'
